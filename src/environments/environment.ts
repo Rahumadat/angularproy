@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  serviceGetTask : 'http://localhost:8000/buscaTodos',
+  serviceGetTask2 : 'http://localhost:8000/buscaUno/637148b82f5e3ad85dca43c7'
+
 };
 
 /*
