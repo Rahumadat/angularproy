@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   serviceGetTask : 'http://localhost:8000/buscaTodos',
-  serviceGetTask2 : 'http://localhost:8000/buscaUno/637148b82f5e3ad85dca43c7'
+  serviceGetTask2 : 'http://localhost:8000/buscaUno'
 
 };
 

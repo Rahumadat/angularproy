@@ -10,7 +10,8 @@
     <br><br><br> -->
     <div>
       <h2>el primer metodo</h2>
-      <table>
+      <button (click)="getTasksFromService()" >Muestra los registros!</button>
+      <table border="1" *ngIf="muestraTodos">
       <tr>
         <td>Title</td><td>Description</td><td>Completed</td>
       </tr>
@@ -18,19 +19,23 @@
         <td>{{info.title}}</td>
         <td>{{info.description}}</td>
         <td>{{info.completed}}</td>
+        <button (click)="getTasksFromService2(info._id)" >detalle del registro!</button>
       </tr>
     </table>
     <br><br><br><br>
-    <h2>el segundo metodo</h2>
-    <table>
-      <tr>
-        <td>Title</td><td>Description</td><td>Completed</td>
-      </tr>
-      <tr>
-        <td>{{tasks2.title}}</td>
-        <td>{{tasks2.description}}</td>
-        <td>{{tasks2.completed}}</td>
-      </tr>
-    </table>
+
+      <div *ngIf="muestraUno">
+        <h2>el segundo metodo</h2>
+        <table  border="1">
+          <tr>
+            <td>Title</td><td>Description</td><td>Completed</td>
+          </tr>
+          <tr>
+            <td>{{tasks2.title}}</td>
+            <td>{{tasks2.description}}</td>
+            <td>{{tasks2.completed}}</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
